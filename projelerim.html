@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur Arda Özcan</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Bs İcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Aw. İcons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+
+.dropdown .dropdown-menu {
+        display: none;
+    }
+
+    /* > = Ilk child secici */
+    .dropdown:hover>.dropdown-menu,
+    .dropend:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .project-card img {
+        width: 100%;
+        transition: transform 0.5s ease;
+    }
+
+    .project-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .project-card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .project-overlay {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        display: none;
+    }
+
+    .project-card:hover .project-overlay {
+        display: block;
+    }
+
+    .project-overlay a {
+        color: #fff;
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    #referanslar .rounded-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    #referanslar .card {
+        border: none;
+    }
+
+    #referanslar .card-text {
+        font-style: italic;
+    }
+
+    #referanslar .carousel-indicators {
+        position: absolute;
+        bottom: -30px;
+    }
+
+    #referanslar .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #0D92F4;
+        margin: 5px;
+    }
+    #referanslar .carousel-item {
+        padding-bottom: 55px;
+    }
+
+</style>
+
+<body class="min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Onur Arda Özcan.</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="teknolojiler.html" class="nav-link">Teknolojiler</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="index.html" class="nav-link dropdown-toggle profil" data-bs-toggle="dropdown">Profil</a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a href="projelerim.html" class="dropdown-item active">Projelerim</a></li>
+                                <li><a href="iletisim.html" class="dropdown-item">İletişim</a></li>
+
+                                <div class="dropend">
+                                    <a href="index.html" class="nav-link dropdown-toggle ms-3"
+                                        data-bs-toggle="dropdown">Ben</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="yeteneklerim.html" class="dropdown-item">Yeteneklerim</a></li>
+                                        <li><a href="hobilerim.html" class="dropdown-item">Hobilerim</a></li>
+                                    </ul>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="ekip.html" class="nav-link">Ekibim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bloglar.html" class="nav-link">Bloglar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.google.com/" class="nav-link">Çıkış</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header style="background: url(img/img-2.jpg); height: 40vh; width: 100%; background-position: center center; background-size: cover; object-fit: cover;" class="d-flex align-items-center justify-content-center">
+        <p class="text-uppercase display-3">Projelerim</p>
+    </header>
+
+    <main class="container my-5">
+        <div class="text-center my-3">
+            Projelerim ile ilgili aradığın her şeye buradan erişebilirsin. Bu projeleri arkadaşlarınla paylaşarak bana destek olabilirsin. Bunun için benimle iletişime geçmeyi unutma. 
+            <span class="text-muted fst-italic">İletişim için
+                   <a href="iletisim.html">Buraya Tıkla</a>
+            </span>
+        </div>
+
+        <div class="row mt-5">
+            <!-- Proje 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <img src="img/proje-1.jpg">
+                    <div class="project-overlay">
+                        <!-- İkon - 1 -->
+                        <a href="#">
+                            <i class="bi bi-link"></i>
+                        </a>
+                        <!-- İkon - 2 -->
+                        <a href="proje1.html">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Proje 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <img src="img/proje-2.jpg">
+                    <div class="project-overlay">
+                        <a href="#">
+                            <i class="bi bi-link"></i>
+                        </a>
+                        <a href="proje2.html">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Proje 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <img src="img/proje-3.jpg">
+                    <div class="project-overlay">
+                        <a href="#">
+                            <i class="bi bi-link"></i>
+                        </a>
+                        <a href="proje3.html">
+                            <i class="bi bi-plus-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    <!-- Carousel -->
+     <section id="referanslar" class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="mb-4">Görüşler</h3>
+                    <p>Müşterilerim, yakınlarım ve iş ortaklarımın hakkımdaki görüşlerine buradan ulaşabilirsiniz.</p>
+                </div>
+            </div>
+            <!-- Carousel/Slider -->
+            <div id="referanslarCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <!-- Referanslar-1 -->
+                    <div class="carousel-item active">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Asperiores."</p>
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/75.jpg" class="rounded-circle mb-3">
+                                    <div class="text-center">
+                                        <h5 class="mb-0">Randall Dixon</h5>
+                                        <small class="text-muted">Store Owner</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Referanslar-2 -->
+                    <div class="carousel-item">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/men/79.jpg" class="rounded-circle mb-3">
+                                    <div class="text-center">
+                                        <h5 class="mb-0">Lewis Moreno</h5>
+                                        <small class="text-muted">Designer</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Referanslar-3 -->
+                    <div class="carousel-item">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Asperiores. Lorem ipsum dolor sit. "</p>
+
+                                <div class="d-flex flex-column align-items-center">
+                                    <img src="https://randomuser.me/api/portraits/women/47.jpg" class="rounded-circle mb-3">
+                                    <div class="text-center">
+                                        <h5 class="mb-0">Carrie Chambers</h5>
+                                        <small class="text-muted">Ceo & Founder</small>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Indicators -->
+                 <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#referanslarCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#referanslarCarousel" data-bs-slide-to="1" ></button>
+                    <button type="button" data-bs-target="#referanslarCarousel" data-bs-slide-to="2" ></button>
+                 </div>
+            </div>
+        </div>
+     </section>
+
+
+   
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>
+                <a href="gizlilik.html">Gizlilik Politikası</a>
+                <a href="SSS.html">SSS</a>
+                <a href="cerez.html">Çerez Politikası</a>
+            </p>
+            <p>&copy;2035, Onur Arda ÖZCAN. <a target="_blank" href="https://getbootstrap.com/">Bootstrap.com</a> altyapısı ve güvencesiyle.</p>
+            <div>
+                <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark me-2"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

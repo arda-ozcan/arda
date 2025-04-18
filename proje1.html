@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur Arda Özcan</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Bs İcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Aw. İcons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+
+.dropdown .dropdown-menu {
+        display: none;
+    }
+
+    /* > = Ilk child secici */
+    .dropdown:hover>.dropdown-menu,
+    .dropend:hover>.dropdown-menu {
+        display: block;
+    }
+
+    .carousel-indicators button {
+    width: 50px !important;
+    height: 50px !important;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+</style>
+
+
+<body class="min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Onur Arda Özcan.</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="teknolojiler.html" class="nav-link">Teknolojiler</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="index.html" class="nav-link dropdown-toggle profil" data-bs-toggle="dropdown">Profil</a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a href="projelerim.html" class="dropdown-item">Projelerim</a></li>
+                                <li><a href="iletisim.html" class="dropdown-item">İletişim</a></li>
+
+                                <div class="dropend">
+                                    <a href="index.html" class="nav-link dropdown-toggle ms-3"
+                                        data-bs-toggle="dropdown">Ben</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="yeteneklerim.html" class="dropdown-item">Yeteneklerim</a></li>
+                                        <li><a href="hobilerim.html" class="dropdown-item">Hobilerim</a></li>
+                                    </ul>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="ekip.html" class="nav-link">Ekibim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bloglar.html" class="nav-link">Bloglar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.google.com/" class="nav-link">Çıkış</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header style="background: url(img/img-2.jpg); height: 40vh; width: 100%; background-position: center center; background-size: cover; object-fit: cover;" class="d-flex align-items-center justify-content-center">
+        <p class="text-uppercase display-3">Projelerim</p>
+    </header>
+
+    <main class="container my-5">
+        <!-- Başlık -->
+         <h2 class="text-center text-danger">Nova IT Academy Web Tasarım Projesi</h2>
+
+         <!-- Proje İçeriği -->
+        <div class="row mt-4">
+            <!-- Sol Kısım(Proje Fotoğrafları) -->
+            <div class="col-md-8 mb-2">
+                <div class="carousel slide" id="productCarousel" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/proje-1.jpg" class="img-fluid w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/proje-2.jpg" class="img-fluid w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/proje-3.jpg" class="img-fluid w-100">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Önceki(Previous)</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Sonraki(Next)</span>
+                    </button>
+
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" style="background-image: url(img/proje-1.jpg);"></button>
+                        <button data-bs-target="#productCarousel" data-bs-slide-to="1"  style="background-image: url(img/proje-2.jpg);"></button>
+                        <button data-bs-target="#productCarousel" data-bs-slide-to="2"  style="background-image: url(img/proje-3.jpg);"></button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Sağ Kısım(Proje Bilgileri) -->
+            <div class="col-md-4 mb-2">
+                <h4>Projeye Ait Bilgiler</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <i class="bi bi-person-fill"></i> Projeye Ait Bilgiler
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-code-slash"></i> HTML5, CSS3, Bootstrap 5.3, Responsive
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-laptop"> Web Tasarım, Yönetim Paneli, Mobil</i>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-globe2"></i>
+                        <a href="#"> www.deneme.com</a>
+                    </li>
+                </ul>
+
+                <div class="mt-4 d-flex">
+                    <a href="proje3.html" class="btn btn-outline-secondary me-1">Önceki Proje</a>
+                    <a href="proje2.html" class="btn btn-outline-secondary">Sonraki Proje</a>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+   
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>
+                <a href="gizlilik.html">Gizlilik Politikası</a>
+                <a href="SSS.html">SSS</a>
+                <a href="cerez.html">Çerez Politikası</a>
+            </p>
+            <p>&copy;2035, Onur Arda ÖZCAN. <a target="_blank" href="https://getbootstrap.com/">Bootstrap.com</a> altyapısı ve güvencesiyle.</p>
+            <div>
+                <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark me-2"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

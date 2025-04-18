@@ -1,0 +1,22 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.animated-line {
+    display: block;
+    height: 4px;
+    margin: -10px auto;
+    background-color: white;
+    width: 0;
+    animation: slideLine 2s ease-in-out forwards;
+}
+
+@keyframes slideLine {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 32%;
+    }
+}

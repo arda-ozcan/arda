@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur Arda Özcan</title>
+    <link rel="shortcut icon" href="img/img-2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Bs İcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Aw. İcons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    .dropdown .dropdown-menu {
+        display: none;
+    }
+
+    /* > = Ilk child secici */
+    .dropdown:hover>.dropdown-menu,
+    .dropend:hover>.dropdown-menu {
+        display: block;
+    }
+
+    /* .accordion {
+        --bs-accordion-btn-icon-transform: rotate(-90deg);
+    } */
+</style>
+
+<body class="min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Onur Arda Özcan.</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Anasayfa</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="index.html" class="nav-link dropdown-toggle profil"
+                                data-bs-toggle="dropdown">Profil</a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a href="projelerim.html" class="dropdown-item">Projelerim</a></li>
+                                <li><a href="iletisim.html" class="dropdown-item">İletişim</a></li>
+
+                                <div class="dropend">
+                                    <a href="index.html" class="nav-link dropdown-toggle ms-3"
+                                        data-bs-toggle="dropdown">Ben</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="yeteneklerim.html" class="dropdown-item">Yeteneklerim</a></li>
+                                        <li><a href="hobilerim.html" class="dropdown-item">Hobilerim</a></li>
+                                    </ul>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="ekip.html" class="nav-link">Ekibim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bloglar.html" class="nav-link">Bloglar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.google.com/" class="nav-link">Çıkış</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container my-5">
+        <!-- Alert -->
+        <div class="alert alert-warning alert-dismissible fade show">
+            <span class="h4 me-2">Uyarı!</span> Gizlilik Politikası en son 1 Nisan 2024'de güncellenmiştir.
+            <button class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- Title -->
+        <div class="text-center">
+            <h1 class="mb-4">Gizlilik Politikası ve Kişisel Verilerin Korunması</h1>
+            <p class="lead">Gizliliğiniz bizim için önemlidir. Lütfen bu politikayı dikkatle okuyunuz.</p>
+        </div>
+
+        <!-- Content Section -->
+        <section class="bg-light p-5 shadow rounded">
+            <h2 class="h4">Özet</h2>
+            <p>Bu gizlilik politikası 1 Nisan 2024'de yürürlüğe girmiştir. Zaman zaman güncellemeler yapılabilir, lütfen
+                sık sık gözden geçirin.</p>
+            <h2 class="h4 mt-4">Gizlilik Politikasının Amacı</h2>
+            <p>Gizlilik Politikasının temeli Veri Koruması Hukuku'na ve Kişisel verilerin korunması ile ilgili cesitli
+                kanunlara dayanır.
+
+                İnternet sitenizi veya uygulamanızı kullanan kişilerin kişisel verilerini toplayabilirsiniz. Bunu
+                çeşitli amaçlarla ve çeşitli yöntemlerle yapabilirsiniz. İster kullanıcıların cevaplayacağı üyelik,
+                kullanım veya anket soruları sorarsınız ya da arka planda kullanıcının trafik dahil tüm bilgilerini
+                başka bir uygulama vasıtasıyla (Çerezler, vs.) toplarsınız. Her halükarda siz bu kişilerin bir çok
+                kişisel verisini edinmiş olursunuz.</p>
+
+            <h2 class="h4 mt-4">Belge İçeriği</h2>
+            <ul>
+                <li>Üçüncü Taraf İnternet Siteleri Politikası</li>
+                <li>Kişisel Bilgileri Nasıl Topluyoruz?</li>
+                <li>Kişisel Bilgileri Neden Topluyoruz?</li>
+                <li>Çerezler, Yedek Depolama ve İnternet Etkileri</li>
+            </ul>
+        </section>
+
+        <!-- İnfo -->
+        <div class="row mt-5">
+            <div class="col-md-4 text-center">
+                <i class="bi bi-shield-lock-fill text-primary display-4"></i>
+                <h3 class="h5 mt-3">Veri Güvenliği</h3>
+                <p>Bilgileriniz bizimle birlikte güven altındadır.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-file-binary-fill text-success display-4"></i>
+                <h3 class="h5 mt-3">Kişisel Veriler</h3>
+                <p>Kişisel bilgileriniz sadece izin verdiğiniz amaçlar için kullanılır.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="bi bi-globe2 text-danger display-4"></i>
+                <h3 class="h5 mt-3">Global Standartlar</h3>
+                <p>Dünya çapında veri güvenliği standartlarına uygun hareket ediyoruz.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="privicyModal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gizlilik Ayarları</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Bu site, hizmetlerin sunulması ve sürekli iyileştirilmesi için çerezler kullanılmaktadır. Bütün
+                        çerezlerin kullanılmasını kabul ediyor musunuz?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#customizeModal">Özelleştir</button>
+                    <button class="btn btn-success" data-bs-dismiss="modal">Tümünü Kabul Et</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal-2-Ozelleştir -->
+    <div class="modal fade" id="customizeModal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Çerezleri Özelleştirin</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Hangi çerezleri kullanmak istiyorsun?</p>
+                    <div class="accordion" id="cookieAccordion">
+                        <!-- İşlevsellik Çerezleri -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    İşlevsellik Çerezleri
+                                </button>
+                            </h2>
+
+                            <div id="collapseOne" class="collapse collapse-accordion show"
+                                data-bs-parent="#cookieAccordion">
+                                <div class="accordion-body d-flex justify-content-between">
+                                    <span>Kapalı / Açık</span>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" checked disabled>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Güvenlik Çerezleri -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Güvenlik Çerezleri
+                                </button>
+                            </h2>
+
+                            <div id="collapseTwo" class="collapse collapse-accordion" data-bs-parent="#cookieAccordion">
+                                <div class="accordion-body d-flex justify-content-between">
+                                    <span>Kapalı / Açık</span>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" checked>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Analitik Çerezleri -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                    Analitik Çerezleri
+                                </button>
+                            </h2>
+
+                            <div id="collapse3" class="collapse collapse-accordion" data-bs-parent="#cookieAccordion">
+                                <div class="accordion-body d-flex justify-content-between">
+                                    <span>Kapalı / Açık</span>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" checked>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reklam Çerezleri -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                    Reklam Çerezleri
+                                </button>
+                            </h2>
+
+                            <div id="collapse4" class="collapse collapse-accordion" data-bs-parent="#cookieAccordion">
+                                <div class="accordion-body d-flex justify-content-between">
+                                    <span>Kapalı / Açık</span>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" checked>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <hr>
+                        <label for="cerezZamani" class="form-label">Çerezlerin ne kadar süre(gün) ile kullanılacağını
+                            seçiniz!</label>
+                        <input type="range" class="form-range" min="30" max="365" step="1" value="180" id="cerezZamani"
+                            oninput="this.nextElementSibling.value = this.value">
+                        Gün: <output>180</output>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" href="https://www.google.com/" class="btn btn-danger">Çıkış</a>
+                    <button class="btn btn-success" data-bs-dismiss="modal">Kabul Et</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>
+                <a href="gizlilik.html">Gizlilik Politikası</a>
+                <a href="SSS.html">SSS</a>
+                <a href="cerez.html">Çerez Politikası</a>
+            </p>
+            <p>&copy;2035, Onur Arda ÖZCAN. <a target="_blank" href="https://getbootstrap.com/">Bootstrap.com</a> altyapısı ve güvencesiyle.</p>
+            <div>
+                <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark me-2"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script>
+        window.onload = function () {
+            var privicyModal = new bootstrap.Modal(document.getElementById('privicyModal'));
+            privicyModal.show();
+        };
+    </script>
+</body>
+
+</html>

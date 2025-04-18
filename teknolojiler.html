@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onur Arda Özcan</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Bs İcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Aw. İcons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    .dropdown .dropdown-menu {
+        display: none;
+    }
+
+    /* > = Ilk child secici */
+    .dropdown:hover>.dropdown-menu,
+    .dropend:hover>.dropdown-menu {
+        display: block;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+    /* Cursor */
+    .cursor {
+        position: relative;
+        width: 24em;
+        margin: 0 auto;
+        border-right: 2px solid rgba(255, 255, 255, .75);
+        font-size: 30px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    /* Animation */
+    .typewriter-animation {
+        animation:
+            typewriter 5s steps(50) 1s 1 normal both,
+            blinkingCursor 500ms steps(50) infinite normal;
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blinkingCursor {
+        from {
+            border-right-color: rgba(255, 255, 255, .75);
+        }
+
+        to {
+            border-right-color: transparent;
+        }
+    }
+
+    /* Image Gallery */
+    img {
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .modal-img {
+        width: 100%;
+    }
+
+    @media (max-width:768px) {
+        main .gallery {
+            margin-left: 50%;
+            transform: translate(-50%,0%);
+        }
+    }
+
+    /* Aside */
+    aside .row .card {
+        width: 150px;
+        height: 100px;
+    }
+    aside .card .card-body {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    aside .card img {
+        width: 70px;
+        height: 70px;
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+    }
+
+    aside .card img:hover {
+        filter: grayscale(0%);
+    }
+
+</style>
+
+<body class="min-vh-100 d-flex flex-column bg-light">
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Onur Arda Özcan.</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="teknolojiler.html" class="nav-link active">Teknolojiler</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a href="index.html" class="nav-link dropdown-toggle profil" data-bs-toggle="dropdown">Profil</a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a href="projelerim.html" class="dropdown-item">Projelerim</a></li>
+                                <li><a href="iletisim.html" class="dropdown-item">İletişim</a></li>
+
+                                <div class="dropend">
+                                    <a href="index.html" class="nav-link dropdown-toggle ms-3"
+                                        data-bs-toggle="dropdown">Ben</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="yeteneklerim.html" class="dropdown-item">Yeteneklerim</a></li>
+                                        <li><a href="hobilerim.html" class="dropdown-item">Hobilerim</a></li>
+                                    </ul>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="ekip.html" class="nav-link">Ekibim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bloglar.html" class="nav-link">Bloglar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.google.com/" class="nav-link">Çıkış</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header
+        style="background: url(img/teknolojiler/header.jpg); height: 40vh; width: 100%; background-position: center center; background-size: cover; object-fit: cover;"
+        class="d-flex align-items-center justify-content-center">
+        <p class="text-uppercase display-3 text-white">Teknolojİler</p>
+    </header>
+
+    <main>
+        <p class="cursor typewriter-animation">Kullandığım Teknolojiler</p>
+
+        <section class="gallery">
+            <div class="container">
+                <!-- row-cols-md-3 == col-md-4 -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col p-2">
+                        <img src="img/logo.jpg" class="gallery-item border border-5" data-bs-toggle="modal"
+                            data-bs-target="#gallery-modal">
+                    </div>
+                    <div class="col p-2">
+                        <img src="img/teknolojiler/img-1.png" class="gallery-item border border-5" data-bs-toggle="modal"
+                        data-bs-target="#gallery-modal2">
+                    </div>
+                    <div class="col p-2">
+                        <img src="img/teknolojiler/img-3.png" class="gallery-item border border-5">
+                    </div>
+                    <div class="col p-2">
+                        <img src="img/teknolojiler/img-2.png" class="gallery-item border border-5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Modal - 1 -->
+        <div class="modal" id="gallery-modal" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="h4 modal-title">HTML, Lorem, ipsum.</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/logo.png" class="modal-img">
+                    </div>
+                    <div class="modal-footer">
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ratione ut
+                            voluptatibus consectetur expedita soluta sint suscipit pariatur iure illum sunt omnis in,
+                            officia veniam cupiditate animi eius, nulla nam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal - 2 -->
+        <div class="modal" id="gallery-modal2" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="h4 modal-title">CSS, Lorem, ipsum.</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/teknolojiler/img-1.png" class="modal-img">
+                    </div>
+                    <div class="modal-footer">
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas ratione ut
+                            voluptatibus consectetur expedita soluta sint suscipit pariatur iure illum sunt omnis in,
+                            officia veniam cupiditate animi eius, nulla nam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside class="container mt-2">
+        <div class="row ms-5">
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/logo.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/teknolojiler/img-1.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/teknolojiler/img-2.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/teknolojiler/img-3.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/teknolojiler/img-4.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/teknolojiler/img-5.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/teknolojiler/img-6.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-1">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="img/teknolojiler/img-7.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <div class="container">
+            <p>
+                <a href="gizlilik.html">Gizlilik Politikası</a>
+                <a href="SSS.html">SSS</a>
+                <a href="cerez.html">Çerez Politikası</a>
+            </p>
+            <p>&copy;2035, Onur Arda ÖZCAN. <a target="_blank" href="https://getbootstrap.com/">Bootstrap.com</a> altyapısı ve güvencesiyle.</p>
+            <div>
+                <a href="#" class="text-dark me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-dark me-2"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
